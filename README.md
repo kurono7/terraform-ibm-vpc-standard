@@ -23,15 +23,15 @@ module "network" {
   source  = "app.terraform.io/ibm-jcueva-org/vpc-standard/ibm"
   version = "1.0.0.0"
 
-  name = "payments-dev"
+  name = "inventory-prod"
 }
 ```
 
-The `name` variable is used as a prefix for all resources. For example, `payments-dev` produces:
-- `payments-dev-vpc`
-- `payments-dev-subnet`
-- `payments-dev-pgw`
-- `payments-dev-sg`
+The `name` variable is used as a prefix for all resources. For example, `inventory-prod` produces:
+- `inventory-prod-vpc`
+- `inventory-prod-subnet`
+- `inventory-prod-pgw`
+- `inventory-prod-sg`
 
 ---
 
